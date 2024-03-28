@@ -21,9 +21,10 @@ fun main(args: Array<String>) {
 class TestRunner(val testService: TestService) : CommandLineRunner {
     override fun run(vararg args: String) {
         testService.init()
-        testService.showChild()
+        testService.showChild() //kakao group: kakao games, kakao bank
         testService.`카카오 뱅크가 있는 단체에 카카오페이 추가`()
-        testService.showChild()
+        testService.showChild() //kakao group: kakao bank, kakao pay
+        // kako games is missing?!
     }
 }
 
